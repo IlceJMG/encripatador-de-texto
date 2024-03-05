@@ -1,0 +1,453 @@
+
+body{
+    background: #F3F5FC;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:"slnt" 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+#logo {
+    padding-top: 30px;
+    width: 120px;
+    height: 48px;
+}
+
+
+#contenedor{
+    /*width: 95%;
+    padding: 30px;
+    overflow: hidden;*/
+    position: relative;
+    background: #F3F5FC;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+#contenidoIzquierdo{
+    width: 50%;
+    background: #F3F5FC;
+    /*float: left;*/
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 3% 0 0;
+    
+}
+
+#contenidoDerecho{
+    width: 40%;
+    height: 600px;
+    background: rgb(255, 255, 255);
+    /*float: left;*/
+    /*margin-left: 30px;*/
+    /*text-align: center;*/
+    border-radius: 15px;
+    position: relative;
+    /*margin: 1em auto;*/
+    -webkit-box-shadow: 19px 5px 28px -20px rgba(40,62,92,0.92);
+    -moz-box-shadow: 19px 5px 28px -20px rgba(40,62,92,0.92);
+    box-shadow: 19px 5px 28px -20px rgba(40,62,92,0.92);
+
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 0 0 0 3%;
+        
+}
+
+
+
+
+#textoEncriptar{
+    width: 90%;
+    height: 500px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+    background: none;
+    color:#0A3871;    
+
+    border: none;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none;
+
+
+}
+
+
+
+#cajaBotones {
+    width: 100%;
+    overflow: hidden;
+}
+
+#cajaBotones div {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#cajaBotones div button{
+    width: 60%;
+    height: 70px;
+}
+
+#cajainicial {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#cajainicial p{
+    font-size: 20px;
+    color: #0A3871;
+}
+    
+
+#cajaTexto {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+#botonCifrar {
+    
+    display: inline-block;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0px 16px;
+    border-radius: 2px;
+    min-width: 80px;
+    height: 32px;
+    background: #0A3871;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 120, 212);
+    
+
+}
+
+#botonCifrar:hover {
+    background-color: rgb(16, 110, 190);
+    border: 1px solid rgb(16, 110, 190);
+}
+
+#botonDescifrar {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(43, 108, 176);
+    border: 1px solid rgb(66, 153, 225);
+    line-height: 26px;
+
+}
+
+#botonDescifrar:hover{
+    background: gray;
+    transition: 1s all;
+}
+
+.atencion{
+    text-align: left;
+    font-size: 15px;
+    color: #0A3871;
+    margin:10px 45px;
+
+}
+
+
+footer {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    background: #0A3871;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+    padding: 15px 0 0 0;
+
+    background: #0A3871;
+
+}
+
+
+#divResultado {
+    text-align: left;
+    height: 470px;  
+    padding: 20px 20px 0 20px;
+
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color:#0A3871;    
+    overflow: auto;
+}
+
+#botonCopiar {
+    width: 80%;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(43, 108, 176);
+    border: 1px solid rgb(66, 153, 225);
+    line-height: 26px;
+
+}
+
+#botonCopiar:hover{
+    background: gray;
+    transition: 1s all;
+}
+
+
+
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+
+
+
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+  
+  
+  }
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    #cajainicial img {
+        display: none;
+    }
+
+   
+
+
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    
+   
+  
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    
+
+    
+  
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    
+
+    #contenedor{
+        width: 100%;
+        padding: 0;
+    }
+    
+    #cajaTexto {
+        padding: 0;
+    }
+    #contenidoIzquierdo{
+        width: 100%; 
+        margin: 0;
+    }
+    
+    #contenidoDerecho{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+
+    #textoEncriptar{
+        width: 90%;
+        height: 300px;
+    }
+
+    #cajaBotones div {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    #cajaBotones div button{
+        width: 80%;
+        height: 70px;
+    }
+
+
+    #divResultado {
+        height: auto;
+    }
+
+    
+    
+    footer {
+        padding: 25px;
+        font-size: 16px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 2rem; 
+        padding: 15px 0 0 0;
+
+    }
+    
+
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    #contenedor{
+        width: 100%;
+        padding: 0;
+    }
+    
+    #cajaTexto {
+        padding: 0;
+    }
+    #contenidoIzquierdo{
+        width: 100%; 
+    }
+
+    
+    #contenidoDerecho{
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+
+    #textoEncriptar{
+        width: 90%;
+        height: 200px;
+    }
+
+    #cajaBotones div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #cajaBotones div button{
+        width: 80%;
+        height: 70px;
+    }
+
+
+    #divResultado {
+        height: auto;
+    }
+    
+    footer {
+        padding: 25px;
+        font-size: 16px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 2rem; 
+        padding: 15px 0 0 0;
+
+    }
+
+
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

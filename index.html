@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EncriptadorIl</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/Logo-1.png" alt="logo azul de Alura">
+        </div>
+    </header>
+
+    <div id="contenedor">
+
+        <div id="contenidoIzquierdo">
+
+            <div id="cajaTexto">
+
+                <textarea id="textoEncriptar" placeholder="Ingrese texto aquí" required></textarea>
+
+
+            </div>
+
+            <div class="atencion">
+                <img src="images/bi_exclamation-circle-fill.png" alt="Exclamación">
+                <span>Escribe solo letras minúsculas y sin acentos</span>
+            </div>
+            
+            <div id="cajaBotones">
+                <div >
+                    <button id="botonCifrar" onclick="cifrar()">Cifrar</button>
+                </div>
+                <div >
+                    <button id="botonDescifrar" onclick="descifrar()">Descifrar</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contenidoDerecho">
+
+           <div id="cajainicial">
+                <img src="images/mono.png" alt="Imagen de niño">
+                <p><strong>Escribe tu mensaje</strong></p>
+                <p2>Aún no has escrito tu mensaje.</p2>
+           </div> 
+
+           <div id="cajaresultado">
+                <div id="divResultado"></div>
+                <button id="botonCopiar" onclick="copiarContenido()">Copiar</button>
+           </div> 
+
+        </div>
+        
+
+
+
+
+    </div>
+
+   
+    <footer>
+        Ilce 2024
+    </footer>
+
+    <script src="encriptador.js"></script>
+
+</body>
+</html>
