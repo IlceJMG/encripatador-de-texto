@@ -1,0 +1,1 @@
+# encripatador-de-texto
